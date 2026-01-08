@@ -44,3 +44,19 @@ function giveEvenNumbs(arr) {
 const arrayForEvenNumbs = [1, 2, 3, 4, 5, 6];
 const giveEvenNumbsResult = giveEvenNumbs(arrayForEvenNumbs);
 console.log("All Even Number Are: ", giveEvenNumbsResult);
+
+
+
+
+// Problem 8: Capitalize First Letter of Each Word
+
+function capitalizeFirstLetter(str) {
+    return str
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+}
+
+const sampleString = "hello world";
+console.log("Capitalized String: ", capitalizeFirstLetter(sampleString));
+
