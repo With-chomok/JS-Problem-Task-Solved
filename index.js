@@ -12,7 +12,10 @@ function removeDuplicates(arr) {
 }
 
 const arrayWithDuplicates = [1, 2, 2, 3, 4, 4];
-console.log("Removes All Duplicate Numbers:",removeDuplicates(arrayWithDuplicates));
+console.log(
+  "Removes All Duplicate Numbers:",
+  removeDuplicates(arrayWithDuplicates)
+);
 
 // Problem 6: Sum of All Numbers in an Array
 // solved below:
@@ -45,18 +48,26 @@ const arrayForEvenNumbs = [1, 2, 3, 4, 5, 6];
 const giveEvenNumbsResult = giveEvenNumbs(arrayForEvenNumbs);
 console.log("All Even Number Are: ", giveEvenNumbsResult);
 
-
-
-
 // Problem 8: Capitalize First Letter of Each Word
 
 function capitalizeFirstLetter(str) {
-    return str
-        .split(" ")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+  return str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }
 
 const sampleString = "hello world";
 console.log("Capitalized String: ", capitalizeFirstLetter(sampleString));
 
+// Problem 9: Find the Factorial of a Number
+
+function facttorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+const numforFactorial = 5;
+console.log("Factorial is: ", facttorial(numforFactorial));
