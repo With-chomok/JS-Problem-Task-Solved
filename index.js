@@ -1,3 +1,68 @@
+// Problem 1: Reverse a String
+
+function reverseString (str){
+    return result = str.split("").reverse().join("")
+}
+console.log(reverseString("hello"));
+
+
+// Problem 2: Count Vowels in a String
+function countVowels(str) {
+    let count = 0;
+    let vowels = 'A , E , I , O , U';
+
+    for (let char of str.toUpperCase()) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels("programming"));
+
+
+
+// Problem 3: Check for Palindrome
+// Write a function that checks if a string is a palindrome (reads the same forward and backward).
+
+// solved below:
+
+function isPalindrome(str) {
+   let reversed = str.split('').reverse().join('');
+   return str === reversed
+}
+const madam = isPalindrome("madam");
+const hello = isPalindrome("hello")
+console.log(madam);
+console.log(hello);
+
+
+
+// Problem 4: Find the Maximum Number
+
+// solved below:
+
+function findMaxNum(arr) {
+  let maxNum = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > maxNum) {
+      maxNum = arr[i];
+    }
+  }
+  return maxNum;
+}
+const array = [5, 1, 9, 3];
+console.log(findMaxNum(array));
+
+// function findMaxNumUsingMath(arr) {
+//     return Math.max(...arr)
+// }
+// const array2 = [5, 1, 9, 3];
+// console.log(findMaxNumUsingMath(array2));
+
+
+
 // Problem 5: Remove Duplicates from an Array
 // solved below:
 
