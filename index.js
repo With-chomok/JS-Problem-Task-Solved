@@ -1,27 +1,25 @@
 // Problem 1: Reverse a String
 
-function reverseString (str){
-    return result = str.split("").reverse().join("")
+function reverseString(str) {
+  return str.split("").reverse().join("");
 }
-console.log(reverseString("hello"));
 
+console.log(reverseString("hello"));
 
 // Problem 2: Count Vowels in a String
 function countVowels(str) {
-    let count = 0;
-    let vowels = 'A , E , I , O , U';
+  let count = 0;
+  let vowels = "AEIOU";
 
-    for (let char of str.toUpperCase()) {
-        if (vowels.includes(char)) {
-            count++;
-        }
+  for (let char of str.toUpperCase()) {
+    if (vowels.includes(char)) {
+      count++;
     }
-    return count;
+  }
+  return count;
 }
 
 console.log(countVowels("programming"));
-
-
 
 // Problem 3: Check for Palindrome
 // Write a function that checks if a string is a palindrome (reads the same forward and backward).
@@ -29,15 +27,13 @@ console.log(countVowels("programming"));
 // solved below:
 
 function isPalindrome(str) {
-   let reversed = str.split('').reverse().join('');
-   return str === reversed
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
 }
 const madam = isPalindrome("madam");
-const hello = isPalindrome("hello")
+const hello = isPalindrome("hello");
 console.log(madam);
 console.log(hello);
-
-
 
 // Problem 4: Find the Maximum Number
 
@@ -60,8 +56,6 @@ console.log(findMaxNum(array));
 // }
 // const array2 = [5, 1, 9, 3];
 // console.log(findMaxNumUsingMath(array2));
-
-
 
 // Problem 5: Remove Duplicates from an Array
 // solved below:
@@ -135,26 +129,23 @@ function facttorial(n) {
   return result;
 }
 const numforFactorial = 5;
-console.log("Factorial is: ",facttorial(numforFactorial));
-
+console.log("Factorial is: ", facttorial(numforFactorial));
 
 // Problem 10: PingPong Challenge
 
 function pingPong(n) {
-
-    for ( let i = 1; i <= n ; i++ ) {
-        if (i % 3 === 0 && i % 5 === 0 ) {
-             console.log("PingPong");
-        }else if ( i % 3 === 0 ) {
-             console.log("Ping");
-        }else if (i % 5 === 0 ) {
-             console.log("pong");
-        }
-        else {
-               console.log(i);
-        }
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("PingPong");
+    } else if (i % 3 === 0) {
+      console.log("Ping");
+    } else if (i % 5 === 0) {
+      console.log("pong");
+    } else {
+      console.log(i);
     }
-    return n;
+  }
+  return n;
 }
 const pingPongResult = pingPong(20);
 console.log("PingPong Result: ", pingPongResult);
