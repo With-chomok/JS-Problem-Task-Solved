@@ -70,4 +70,26 @@ function facttorial(n) {
   return result;
 }
 const numforFactorial = 5;
-console.log("Factorial is: ", facttorial(numforFactorial));
+console.log("Factorial is: ",facttorial(numforFactorial));
+
+
+// Problem 10: PingPong Challenge
+
+function pingPong(n) {
+
+    for ( let i = 1; i <= n ; i++ ) {
+        if (i % 3 === 0 && i % 5 === 0 ) {
+             console.log("PingPong");
+        }else if ( i % 3 === 0 ) {
+             console.log("Ping");
+        }else if (i % 5 === 0 ) {
+             console.log("pong");
+        }
+        else {
+               console.log(i);
+        }
+    }
+    return n;
+}
+const pingPongResult = pingPong(20);
+console.log("PingPong Result: ", pingPongResult);
